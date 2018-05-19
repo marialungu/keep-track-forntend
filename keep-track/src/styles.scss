@@ -8,3 +8,40 @@ body {
   margin: 0;
   transition: 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
 }
+
+.h1__kt{
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.h2__kt{
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.h3__kt{
+  font-size: 18px;
+  line-height:26px;
+}
+
+.p__kt{
+  font-size: 14px;
+  line-height:20px;
+}
+
+.minip__kt{
+  font-size: 12px;
+  line-height:16px;
+}
+
+.inconsolata{
+  font-family: $monospaced;
+}
+
+.montserrat{
+  font-family: $sans-serif;
+}
+
+.lora{
+  font-family: $serif;
+}

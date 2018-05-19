@@ -1,0 +1,14 @@
+@import '../../node_modules/@angular/material/theming';
+@import "/custom-pallete.scss";
+
+@include mat-core();
+
+$keepTrack-theme-primary: mat-palette($mat-gunmetalprimary);
+$keepTrack-theme-accent: mat-palette($mat-aquamarineaccent);
+$keepTrack-theme-warn: mat-palette($mat-tarteorangewarning);
+
+
+$keepTrack-theme: mat-light-theme($keepTrack-theme-primary, $keepTrack-theme-accent, $keepTrack-theme-warn);
+
+@include angular-material-theme($keepTrack-theme);
+@include mat-tabs-theme($keepTrack-theme);

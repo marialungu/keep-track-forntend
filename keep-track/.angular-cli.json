@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss"
+        "styles.scss",
+        "styles/keepTrack-theme.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

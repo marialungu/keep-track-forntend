@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {RouterModule, Routes} from "@angular/router";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {MaterialModule} from "./material.module";
 
 const appRoutes: Routes = [
   {
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    MaterialModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

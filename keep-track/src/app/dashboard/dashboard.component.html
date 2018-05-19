@@ -1,4 +1,11 @@
-
-<button mat-raised-button color="primary">Primary</button>
-<button mat-raised-button color="accent">Accent</button>
-<button mat-raised-button color="warn">Warn</button>
+<div class="main">
+  <mat-grid-list cols="3">
+    <div class="container">
+      <div *ngFor="let board of allBoards">
+      <mat-card class="board-card">
+        <mat-card-title>{{ board.boardName }}</mat-card-title>
+      </mat-card>
+      </div>
+    </div>
+  </mat-grid-list>
+</div>

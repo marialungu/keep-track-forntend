@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+
+.side-menu{
+  background-color: $primary;
+  width: 16vw;
+  height: 100vh;
+}
+
+.side-menu-header{
+  height: 7vh;
+  background-color: $accent;
+}
+
+.custom-title{
+  color: $text-black;
+  margin-top: 0;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.menu-group{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.5em;
+}
+
+.menu-buttons{
+  height: 50px;
+  padding-left: 2em;
+  width: 100%;
+  text-align: left !important;
+}
+
+.menu-item {
+  font-weight: normal;
+}
+
+.menu-divider{
+  border-top-color: rgba(23, 32, 42, 0.5) !important;
+  width: 14vw;
+  margin: .5em auto;
+}

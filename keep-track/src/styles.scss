@@ -2,11 +2,14 @@
 @import "styles/variables";
 
 body {
-  min-height: 102vh;
   background: $background-white;
   font-family: $sans-serif, $serif;
   margin: 0;
   transition: 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+a, a:hover {
+  text-decoration: none;
 }
 
 .h1__kt{
@@ -45,3 +48,8 @@ body {
 .lora{
   font-family: $serif;
 }
+
+.menu-icon{
+  font-size: 20px !important;
+}
+

@@ -1,6 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatIconModule, MatToolbarModule, MatSelectModule, MatSnackBarModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatIconModule,
+  MatToolbarModule,
+  MatSelectModule,
+  MatSnackBarModule,
+  MatDividerModule
+} from '@angular/material';
 import { MatCardModule, MatGridListModule, MatTabsModule, MatSlideToggleModule } from '@angular/material';
 import { MatAutocompleteModule, MatButtonToggleModule, MatCheckboxModule, MatRippleModule } from '@angular/material';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -30,7 +37,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     FormsModule,
     MatSlideToggleModule,
     ReactiveFormsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDividerModule
   ],
   exports: [
     MatAutocompleteModule,
@@ -51,7 +59,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatTabsModule,
     FormsModule,
     ReactiveFormsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDividerModule
   ]
 })
 

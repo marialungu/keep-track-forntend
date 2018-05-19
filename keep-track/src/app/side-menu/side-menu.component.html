@@ -1,19 +1,27 @@
-<p class="p__kt">
-  side-menu works!
-</p>
+<div class="side-menu">
+  <header class="side-menu-header">
+    <a routerLink="/boards">
+      <h2 class="h2__kt montserrat custom-title">Keep Track</h2>
+    </a>
+  </header>
+  <main class="menu-group">
+    <button mat-button color="accent" class="menu-buttons">
+      <mat-icon class="menu-icon" color="accent">note_add</mat-icon>
+      <span class="p__kt montserrat menu-item">Add new note</span>
+    </button>
+    <button mat-button color="accent" class="menu-buttons">
+      <mat-icon class="menu-icon" color="accent">playlist_add_check</mat-icon>
+      <span class="p__kt montserrat menu-item">Add new checklist</span>
+    </button>
+    <button mat-button color="accent" class="menu-buttons">
+      <mat-icon class="menu-icon" color="accent">library_add</mat-icon>
+      <span class="p__kt montserrat menu-item">Add new board</span>
+    </button>
+    <mat-divider class="menu-divider"></mat-divider>
+    <button mat-button color="warn" class="menu-buttons">
+      <mat-icon class="menu-icon" color="warn">power_settings_new</mat-icon>
+      <span class="p__kt montserrat menu-item">Log out</span>
+    </button>
+  </main>
 
-<p class="minip__kt">
-  side-menu works!
-</p>
-
-<p class="h1__kt">
-  side-menu works!
-</p>
-
-<p class="h2__kt">
-  side-menu works!
-</p>
-
-<p class="h3__kt">
-  side-menu works!
-</p>
+</div>

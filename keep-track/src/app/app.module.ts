@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {RouterModule, Routes} from "@angular/router";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MaterialModule} from "./material.module";
+import { SideMenuComponent } from './side-menu/side-menu.component';
 
 const appRoutes: Routes = [
   {
@@ -27,7 +28,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,

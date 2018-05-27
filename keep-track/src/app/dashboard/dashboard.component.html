@@ -4,19 +4,21 @@
       <div *ngFor="let board of allBoards">
       <mat-card class="board-card">
         <mat-card-title class="board-name h2__kt" [style.background-color]="board.boardColor != 'null' ? board.boardColor : '#146072'">
-          {{ board.boardName }}
-          <!--<button mat-icon-button [matMenuTriggerFor]="moreMenu">-->
-            <!--<mat-icon class="more-icon">more_horiz</mat-icon>-->
-          <!--</button>-->
-          <!--<mat-menu #moreMenu="matMenu">-->
-            <!--<ng-template matMenuContent>-->
-              <!--<button mat-menu-item>Edit</button>-->
-              <!--<button mat-menu-item>Delete</button>-->
-            <!--</ng-template>-->
-          <!--</mat-menu>-->
+          <div class="board-header">
+            {{ board.boardName }}
+            <button mat-icon-button class="more-btn" [matMenuTriggerFor]="moreMenu">
+              <mat-icon class="more-icon">more_horiz</mat-icon>
+            </button>
+            <mat-menu #moreMenu="matMenu" align="end center">
+              <ng-template matMenuContent>
+                <button mat-menu-item class="board-menu-item">Edit</button>
+                <button mat-menu-item class="board-menu-item" (click)="onDelete(board)">Delete</button>
+              </ng-template>
+            </mat-menu>
+          </div>
         </mat-card-title>
         <mat-card-content class="board-content">
-          <div  *ngFor="let note of allNotes">
+          <div *ngFor="let note of allNotes" (click)="openDialog(note)">
             <mat-card class="note-card" *ngIf="note.boardId == board.boardId">
               {{note.noteName}}
             </mat-card>

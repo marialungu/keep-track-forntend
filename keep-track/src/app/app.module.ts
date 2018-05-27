@@ -9,6 +9,9 @@ import {MaterialModule} from "./material.module";
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import {ApiService} from "./api.service";
 import {HttpClientModule} from "@angular/common/http";
+import { ViewNoteComponent } from './dashboard/view-note/view-note.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { ConfirmDeleteComponent } from './dashboard/confirm-delete/confirm-delete.component';
 
 const appRoutes: Routes = [
   {
@@ -31,13 +34,18 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     DashboardComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    ViewNoteComponent,
+    ConfirmDeleteComponent
   ],
-  // entryComponents: [
-  //   DashboardComponent
-  // ],
+  entryComponents: [
+    DashboardComponent,
+    ViewNoteComponent,
+    ConfirmDeleteComponent
+  ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
     RouterModule.forRoot(appRoutes)

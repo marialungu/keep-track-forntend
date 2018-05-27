@@ -1,0 +1,14 @@
+<mat-dialog-content id="confirm-content">
+  <div class="confirm-dialog">
+    <p class="p_delete">Are you sure you want to delete <strong>{{ apiService.board.boardName }}</strong> ? <br> All its notes will be deleted as well!</p>
+    <div class="confirm-btn-group">
+      <button (click)="onConfirm()" mat-mini-fab color="warn" class="confirm-button">
+        <mat-icon aria-label="Delete this board!">check</mat-icon>
+      </button>
+      <button (click)="onClose()" mat-mini-fab color="primary">
+        <mat-icon aria-label="Don't delete this board!">close</mat-icon>
+      </button>
+    </div>
+  </div>
+</mat-dialog-content>
+

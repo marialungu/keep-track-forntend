@@ -13,6 +13,19 @@
   background: $button-white;
 }
 
+.more-btn{
+  position: absolute;
+  right: 20px;
+  top: 16px;
+}
+
+.board-menu-item{
+  font-family: $sans-serif;
+  font-size: 14px;
+  line-height: 38px !important;
+  height: 36px !important;
+}
+
 .main{
   width: 81.5%;
   float: left;

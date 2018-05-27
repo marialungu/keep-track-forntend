@@ -7,5 +7,38 @@
 }
 
 .board-card{
-  width: 280px;
+  width: 320px;
+  margin-bottom: 3vh;
+  padding: 0 !important;
+  background: $button-white;
+}
+
+.main{
+  width: 81.5%;
+  float: left;
+  padding: 5vh 2%;
+}
+
+.board-name{
+  font-family: $sans-serif;
+  padding: 20px !important;
+  color: $button-white;
+  margin-bottom: 0 !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board-content{
+  padding: 20px !important;
+}
+
+.more-icon{
+  float: right;
+}
+
+.note-card{
+  font-family: $sans-serif;
+  font-size: 16px;
+  padding: 18px !important;
+  margin-bottom: 1vh !important;
 }

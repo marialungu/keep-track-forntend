@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Board} from "../board";
 import {ApiService} from "../api.service";
+import {Note} from "../note";
 
 @Component({
   selector: 'app-dashboard',
@@ -10,6 +11,7 @@ import {ApiService} from "../api.service";
 export class DashboardComponent implements OnInit {
 
   allBoards: Board[];
+  allNotes: Note[];
 
   constructor(public apiService: ApiService) { }
 
@@ -18,13 +20,22 @@ export class DashboardComponent implements OnInit {
       .subscribe(
         result => {
           this.allBoards = result;
-          console.log('im here');
+        }
+      );
+  }
+
+  getAllNotes(): void{
+    this.apiService.getAllNotes()
+      .subscribe(
+        result => {
+          this.allNotes = result;
         }
       );
   }
 
   ngOnInit() {
     this.getAllBoards();
+    this.getAllNotes();
   }
 
 
